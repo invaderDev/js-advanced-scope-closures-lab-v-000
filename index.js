@@ -1,5 +1,5 @@
 function produceDrivingRange(blockRange){
-  return function(tripDistance) {
+  return function(start, end) {
     let distance = Math.abs(parseInt(start) - parseInt(end));
     if (distance < blockRange) {
       return `withing range by` + (blockRange - tripDistance);
